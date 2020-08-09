@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors Game:)</title>
+    <script src="https://kit.fontawesome.com/0aec6679b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+   
+  </head>
+  <body>
+      <header class="header">                    
+          <h1>Rock Paper Scissors Game :)</h1>
+      </header>
+      
+      <div class="container">
+        <div class="score-container">
+          <span class="user">You</span>
+          <span id="score"></span>
+          <span class="com">COM</span>
+        </div>
+        <div class="buttons">
+          <button  id="paper"class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+          <button  id="rock"   class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+          <button id="scissors" class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+        </div>
+        <div id="challenge">
+          <div id="you">
+            <div id="yourobject"></div>
+            <div class="who">You</div>
+          </div>
+          <div id="result"><p id="who"></p></div>
+          <div id="com">
+            <div id="comobject"></div>
+            <div class="who">Com</div>
+          </div> 
+        </div>
+      </div>
+      <script  type="text/javascript" src="main.js"  ></script>
+    
+  </body>
+</html>
